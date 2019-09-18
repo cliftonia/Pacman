@@ -1,10 +1,8 @@
 # Pacman
 
-whatsthat is an app that people post images with a question wanting to find out what the images is.
-
 Pacman resides on a 5 X 5 board and can move using the following the commands: PLACE, MOVE, LEFT, RIGHT & REPORT
 
-Here is the link:
+Here is the link: https://repl.it/@CliftonTheodore/Pacman
 
 ## Technologies
 
@@ -20,6 +18,7 @@ Here is the link:
 - Then I started to create my methods and write tests for them
 - Once i was happy with them all working the way they were supposed to, I then started taking the inputs
 - I used loops for error handling for when the user tried to type outside the scope of the game
+- Lastly I wanted to change it up a little and at the beginning ask the user to provide an X coordinate and a Y coordinate and lastly ask them what direction they would like to face.
 
 ## Challenges & lessons learnt
 
