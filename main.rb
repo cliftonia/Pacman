@@ -1,60 +1,29 @@
+require 'pry'
+
 require_relative 'pacman'
+require_relative 'pacman_methods'
+
+pacman = Pacman.new(0, 0, 'SOUTH')
 
 puts 'WELCOME TO PACMAN'
 puts 'PACMAN RESIDES ON A 5 X 5 BOARD'
 puts 'HE CAN FACE NORTH, SOUTH, EAST AND WEST'
 
-loop do
-  puts 'TO BEGIN PLESE PROVIDE AN X COORDINATE BETWEEN 0 - 5'
-  @x = gets.chomp.to_i
-
-  if @x.between?(0, 5)
-    break
-  else
-    puts 'NUMBER INVALID'
-  end
-end
-
-loop do
-  puts 'PLEASE PROVIDE AN Y COORDINATE BETWEEN 0 - 5'
-  @y = gets.chomp.to_i
-
-  if @y.between?(0, 5)
-    break
-  else
-    puts 'NUMBER INVALID'
-  end
-end
-
-loop do
-  puts 'PLEASE PROVIDE WHICH DIRECTION YOU WANT PACMAN TO FACE'
-  puts 'NORTH'
-  puts 'SOUTH'
-  puts 'EAST'
-  puts 'WEST'
-
-  @f = gets.chomp.upcase
-
-  if @f == 'NORTH' || @f == 'SOUTH' || @f == 'EAST' || @f == 'WEST'
-    break
-  else
-    puts 'INVALID DIRECTION'
-  end
-end
-
-pacman = Pacman.new(@x, @y, @f)
-
-puts 'TO BEGIN PLEASE TYPE: PLACE'
-puts 'MOVE PACMAN BY TYPING MOVE'
-puts 'YOU CAN CHANGE DIRECTION BY EITHER TYPING: LEFT OR RIGHT'
-puts 'TO SEE WHERE YOU ARE ON THE BOARD TYPE: REPORT'
-puts 'TO QUIT TYPE: EXIT'
+puts 'TO BEGIN PLEASE TYPE PLACE'
 
 loop do
   command = gets.chomp.upcase
 
   if command == 'PLACE'
+    x_axis
+    y_axis
+    facing_direction
+    pacman.place(@xaxis, @yaxis, @facing)
     puts pacman.report
+    puts 'YOUE CAN MOVE PACMAN BY TYPING MOVE'
+    puts 'YOU CAN CHANGE DIRECTION BY TYPING LEFT OR RIGHT'
+    puts 'TO SEE WHERE YOU ARE ON THE BOARD TYPE: REPORT'
+    puts 'TO QUIT TYPE: EXIT'
   elsif command == 'MOVE'
     puts "PACMAN MOVED TO POSTION: #{pacman.move}"
   elsif command == 'LEFT'
