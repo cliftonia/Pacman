@@ -2,7 +2,9 @@
 
 Pacman resides on a 5 X 5 board and can move using the following the commands: PLACE, MOVE, LEFT, RIGHT & REPORT
 
-Here is the link: https://repl.it/@CliftonTheodore/pacmanchallange
+## Instructions on how to play
+
+open this link: https://repl.it/@CliftonTheodore/pacmanchallange
 
 ## Technologies
 
