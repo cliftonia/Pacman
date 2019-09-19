@@ -1,10 +1,10 @@
 # Pacman
 
-Pacman resides on a 5 X 5 board and can move using the following the commands: PLACE, MOVE, LEFT, RIGHT & REPORT
+Pacman is coding challange I was given which with under my understanding was to create a 5 X 5 board and by the use of typing commands you are able to move Pacman within the board.
 
-## Instructions on how to play
+## How to play
 
-open this link: https://repl.it/@CliftonTheodore/pacmanchallange
+- open this link: https://repl.it/@CliftonTheodore/pacmanchallange
 
 ## Technologies
 
