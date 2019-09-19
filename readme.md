@@ -6,6 +6,15 @@ Pacman is coding challange I was given which with under my understanding was to 
 
 - open this link: https://repl.it/@CliftonTheodore/pacmanchallange
 
+## Instructions
+
+- To begin you must enter PLACE (case insensitive)
+- You will then be asked to provide an X coordinate, followed by an Y coordinate
+- Finally you will be asked what directions you would like Pacman to face eg. NORTH, SOUTH, EAST AND WEST (case insensitive)
+- You can move Pacman by typing MOVE (case insensitive)
+- You can change direction by typing either LEFT or RIGHT (case insensitive)
+- You can exit the challange by typine EXIT (case insensitive)
+
 ## Technologies
 
 - Ruby
